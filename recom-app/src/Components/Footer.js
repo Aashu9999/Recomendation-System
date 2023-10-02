@@ -41,7 +41,7 @@ const Footer = () => {
       
     </div>
      <div className="copy_right">
-        <h6>@All rights copyright Reserved</h6>
+        <h6>@All rights copyright Reserved.</h6>
      </div>
     </footer>
     </>
