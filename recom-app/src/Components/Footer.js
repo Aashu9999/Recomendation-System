@@ -1,5 +1,5 @@
 import React from 'react'
-import "./login.css"
+import "./app.css"
 
 const Footer = () => {
   return (
@@ -10,6 +10,8 @@ const Footer = () => {
       <div className="f_logo">
         <h3>Logp</h3>
       </div>
+
+      <div className="all_quick_links">
 
       <div className="Quick_links">
           <h3>Quick Links</h3>
@@ -32,10 +34,12 @@ const Footer = () => {
 
 
       </div>
+      </div>
 
       <div className="emai_box">
-
+       
       <input type="email" name="last_email" id="last_email" placeholder='Email'/>
+      <button className='f_button'>send</button>
 
       </div>
       

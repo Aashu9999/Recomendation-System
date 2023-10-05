@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./login.css"
+import "./app.css"
 import AboutUs from './AboutUs'
 import ContactUs from './ContactUs'
 import Footer from "./Footer"
@@ -8,17 +8,17 @@ import Footer from "./Footer"
 export default function LandingPage() {
     return (
 
-      <>
+      <div className="parent">
 
         <div className="HeaderStyle">
 
 
 <nav className="navbar">
       <div className="navbar-logo">
-        <img src="https://www.shutterstock.com/shutterstock/videos/1069844197/thumb/5.jpg?ip=x480" alt="" />
+        
       </div>
       <ul className="navbar-links">
-        <li><Link to ="/AboutUs">About Us</Link></li>
+        <li className='first_nav'><Link to ="/AboutUs">About Us</Link></li>
         <li><Link to ="/register">Register</Link></li>
         <li><Link to ="/Login">Login</Link></li>
         <li><Link to ="/contactus">Contact Us</Link></li>
@@ -48,7 +48,7 @@ export default function LandingPage() {
                       <Footer/>
                 </div>
 
-            </>
+            </div>
     
     )
 }

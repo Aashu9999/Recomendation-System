@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./login.css"
+import "./app.css"
 
 export default function SignInPage() {
     return (
+        
         <div className="text-center">
             
 
@@ -13,7 +14,7 @@ export default function SignInPage() {
 
 
                 <p>
-                    <label>Username or email address</label><br/>
+                    <label>Username/Email</label><br/>
                     <input type="text" name="first_name" required />
                 </p>
                 <p>
@@ -28,12 +29,10 @@ export default function SignInPage() {
                 </p>
                 <p>
                     <button id="sub_btn" type="submit">Login</button>
-                </p>
+                </p><p>First time? <Link to="/register">Create an account</Link>.</p>
+
             </form>
-            <footer>
-                <p>First time? <Link to="/register">Create an account</Link>.</p>
-                <p><Link to="/">Back to Homepage</Link>.</p>
-            </footer>
+
         </div>
     )
 }

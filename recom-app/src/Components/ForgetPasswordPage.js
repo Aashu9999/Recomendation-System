@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./login.css"
+import "./app.css"
 
 export default function ForgetPasswordPage() {
     return (
@@ -16,12 +16,8 @@ export default function ForgetPasswordPage() {
                 </p>
                 <p>
                     <button id="sub_btn" type="submit">Send password reset email</button>
-                </p>
+                </p> <p>First time? <Link to="/register">Create an account</Link>.</p>
             </form>
-            <footer>
-                <p>First time? <Link to="/register">Create an account</Link>.</p>
-                <p><Link to="/">Back to Homepage</Link>.</p>
-            </footer>
         </div>
     )
 }
