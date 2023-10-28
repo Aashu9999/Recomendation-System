@@ -7,6 +7,7 @@ import LandingPage from './Components/LandingPage'
 import HomePage from './Components/HomePage'
 import AboutUs from './Components/AboutUs'
 import ContactUs from './Components/ContactUs'
+import Detail from './Components/Detail'
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <Route path='home' Component={HomePage}/>
       <Route path='aboutus' Component={AboutUs}/>
       <Route path='contactus' Component={ContactUs}/>
+      <Route path='detail' Component={Detail}/>
     </Routes>
     </>
   )
