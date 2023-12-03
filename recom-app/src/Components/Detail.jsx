@@ -1,42 +1,74 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { BiArrowBack } from 'react-icons/bi';
+import Select from 'react-select'
 
 const Detail = () => {
-  const purple = "#800080";
-  const text = "Click Me";
-  const[bg, setBg] = useState(purple);
-  const[txt, setTxt] = useState(text);
-  const[detail, setDetail] = useState("Click Up to Download the File");
 
-  const[add, setAdd] = useState(0);
+  const options = [
+    {value: "CANDY", label: "candy"},
+    {value: "CANDY", label: "candy"},
+    {value: "CANDY", label: "candy"},
+    {value: "CANDY", label: "candy"},
+    {value: "CANDY", label: "candy"},
+    {value: "CANDY", label: "candy"},
+    {value: "CANDY", label: "candy"},
+    {value: "CANDY", label: "candy"},
+  ]
 
-     const ChangeBackground = () =>{
-
-      let newBg = "#34495e";
-      let newTxt = "OMG ";
-      let newDetail = "The file is downloading";
-      setBg(newBg);
-      setTxt(newTxt);
-      setDetail(newDetail);
-      
-           
-     };
 
   return (
-    <div className='main_color' style={ {backgroundColor : bg,  } }>
-     
-           
-        
-        <button className='btn' onClick={ChangeBackground}>{txt}</button>
-
-        <h1>{ detail }</h1>
-
-        <div className="new">
-          <button className='btn' onClick={()=>setAdd(add+1)}>+</button>
-          <h1>{ add }</h1>
-          <button className='btn' onClick={ () => (add===0) ? setAdd(0) : setAdd(add-1)}>-</button>
-        </div>
+    <div>
+      <div className="mainContainer">
       
-    </div>
+        
+        <div className="detail_page">
+         <div className="back_btn">
+               <button className='btn'> <BiArrowBack/>  Back  </button>
+        </div>
+            <form className='detail_page_form'>
+            <h2>Join us</h2>
+                <p>
+                    <label>GPA Score</label><br/>
+                    <input type="text" 
+                    id='GPA'
+                    name="GPA"        
+                     />
+                    
+                </p>
+                
+                <p>
+                    <label>Enter Location</label><br/>
+                    <input type="text" 
+                    name="location" 
+                     />
+                   
+                </p>
+
+                <p>
+                    <label> Choose Acadamic Program </label><br/>
+                    <Select 
+                    options = {options} 
+                    // defaultValue={options}
+                    placeholder = "Enter the option"
+
+                    styles={{
+
+                    }}
+                    />
+                
+                </p>
+
+
+                <p>
+            
+                    <button id="sub_btn" type="submit">Register</button>
+                
+
+                </p>
+            </form>
+        </div>
+        </div>
+      </div>
   )
 }
 
