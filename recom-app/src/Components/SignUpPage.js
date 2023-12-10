@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './app.css';
 import { useFormik } from 'formik';
 import { SignUpSchema } from '../schemas';
+import { NavLink } from 'react-router-dom';
 
 const initialValues = {
     name: "",
@@ -80,9 +81,9 @@ return (
                     <input type="checkbox" name="checkbox" id="checkbox" required /> <span>I agree all statements in <a href="https://google.com" target="_blank" rel="noopener noreferrer">terms of service</a></span>.
                 </p>
                 <p>
-            
+                     <NavLink to = "/detail">
                     <button id="sub_btn" type="submit">Register</button>
-                
+                </NavLink>
 
                     <p className='back'><Link to="/">Back to Homepage</Link>.</p>
                 </p>

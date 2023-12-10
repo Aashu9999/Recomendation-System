@@ -1,14 +1,15 @@
 import React from 'react'
 import { BiArrowBack } from 'react-icons/bi';
 import Select from 'react-select'
+import { NavLink } from 'react-router-dom';
 
 const Detail = () => {
 
   const options = [
-    {value: "CANDY", label: "candy"},
-    {value: "CANDY", label: "candy"},
-    {value: "CANDY", label: "candy"},
-    {value: "CANDY", label: "candy"},
+    {value: "COMPUTER ENGINEERING", label: "Computer Engineering"},
+    {value: "CSIT", label: "CSIT"},
+    {value: "SOFTWARE ENGINEERING", label: "Software Engineering"},
+    {value: "COMPUTER APPLICATION", label: "Computer Application"},
     {value: "CANDY", label: "candy"},
     {value: "CANDY", label: "candy"},
     {value: "CANDY", label: "candy"},
@@ -22,9 +23,10 @@ const Detail = () => {
       
         
         <div className="detail_page">
+        <NavLink to = "/">
          <div className="back_btn">
                <button className='btn'> <BiArrowBack/>  Back  </button>
-        </div>
+        </div></NavLink>
             <form className='detail_page_form'>
             <h2>Join us</h2>
                 <p>
